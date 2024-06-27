@@ -198,22 +198,109 @@
             //}
             #endregion
             #region Problem 23
+            //int[] array = { 1, 5, 6, 9, 87, 10, 30, -1, 13656 };
+            //int max = array[0], min = array[0], i;
+            //for (i = 1; i < array.Length; i++)
+            //{
+            //    if (array[i] > max)
+            //        max = array[i];
 
+            //    if (array[i] < min)
+            //        min = array[i];
+            //}
+            //Console.WriteLine($"Max number: {max}");
+            //Console.WriteLine($"Min number: {min}");
             #endregion
             #region Problem 24
-
+            //int[] array = { 1, 5, 6, 9, 87, 90, 10, 30, -1, 13656 };
+            //int i, j, max1 = array[0], max2 = array[0];
+            //for (i = 1; i < array.Length; i++)
+            //{
+            //    if (array[i] > max1)
+            //        max1 = array[i];
+            //}
+            //for (j = 1; j < array.Length; j++)
+            //{
+            //    if (array[j] > max2)
+            //    {
+            //        if (array[j] == max1)
+            //            continue;
+            //        max2 = array[j];
+            //    }
+            //}
+            //Console.WriteLine($"Second Largest is : {max2}");
             #endregion
             #region Problem 25
-
+            //int[] array = { 1, 2, 3, 4, 2, 5, 6, 7, 8, 1 };
+            //int maxDistance = 0;
+            //for (int i = 0; i < array.Length; i++)
+            //{
+            //    for (int j = i + 1; j < array.Length; j++)
+            //    {
+            //        if (array[i] == array[j])
+            //        {
+            //            int distance = j - i - 1;
+            //            if (distance > maxDistance)
+            //            {
+            //                maxDistance = distance;
+            //            }
+            //        }
+            //    }
+            //}
+            //Console.WriteLine($"The longest distance between two equal cells is: {maxDistance}");
             #endregion
             #region Problem 26
-
+            //Console.Write("Enter a sentence:");
+            //string input = Console.ReadLine();
+            //string[] partitions = input.Split(" ");
+            //for (int i = partitions.Length - 1; i >= 0; i--)
+            //{
+            //    Console.Write(partitions[i]+" "); 
+            //}
             #endregion
             #region Problem 27
+            //int rows, cols;
 
+            //Console.Write("Enter size of rows: ");
+            //int.TryParse(Console.ReadLine(), out rows);
+
+            //Console.Write("Enter size of columns: ");
+            //int.TryParse(Console.ReadLine(), out cols);
+
+            //int[,] firstArray = new int[rows, cols];
+            //int[,] secondArray = new int[rows, cols];
+
+            //Console.WriteLine("Enter the elements of the first array:");
+            //for (int i = 0; i < rows; i++)
+            //{
+            //    for (int j = 0; j < cols; j++)
+            //    {
+            //        Console.Write($"Element [{i},{j}]: ");
+            //        firstArray[i, j] = int.Parse(Console.ReadLine());
+            //    }
+            //}
+
+            //for (int i = 0; i < rows; i++)
+            //{
+            //    for (int j = 0; j < cols; j++)
+            //        secondArray[i, j] = firstArray[i, j];
+            //}
+
+            //for (int i = 0; i < rows; i++)
+            //{
+            //    for (int j = 0; j < cols; j++)
+            //        Console.Write($"{secondArray[i, j]}\t");
+
+            //    Console.WriteLine();
+            //}
             #endregion
             #region Problem 28
-
+            //int[] array = { 100, 50, 98, 21, 54, 74, 10, 25 };
+            //int i;
+            //for (i = array.Length - 1; i >= 0; i--)
+            //{
+            //    Console.Write($"{array[i]}   ");
+            //}
             #endregion
         }
     }
