@@ -100,13 +100,102 @@
             //}
             #endregion
             #region Problem 20
-
+            ////Assume the array is 1d
+            //int[] numbers = { 1, 2, 4, 9, 10, 50, 30 };
+            //int result = 0;
+            //foreach (int number in numbers)
+            //    result += number;
+            //Console.WriteLine($"The final result is {result}");
             #endregion
             #region Problem 21
+            //int[] array1 = { 10, 40, 80, 150 };
+            //int[] array2 = { 200, 30, 20, 70 };
+            //if (array1.Length != array2.Length)
+            //{
+            //    Console.WriteLine("The arrays are not the same size");
+            //    return;
+            //}
+            //int[] result = new int[array1.Length + array2.Length];
+            //int i = 0, j = 0, k = 0;
+            ////Merge two arrays first
+            //while (i < array1.Length)
+            //{
+            //    result[k] = array1[i];
+            //    i++;
+            //    k++;
+            //}
 
+            //while (j < array2.Length)
+            //{
+            //    result[k] = array2[j];
+            //    j++;
+            //    k++;
+            //}
+            //Quick_Sort(result, 0, result.Length - 1);
+            //Console.WriteLine("Sorted array : ");
+
+            //foreach (var number in result)
+            //{
+            //    Console.Write(" " + number);
+            //}
+            //// Using Quick sort algorithm to sort the array
+            //static void Quick_Sort(int[] arr, int left, int right)
+            //{
+            //    if (left < right)
+            //    {
+            //        int pivot = Partition(arr, left, right);
+
+            //        if (pivot > 1)
+            //            Quick_Sort(arr, left, pivot - 1);
+
+            //        if (pivot + 1 < right)
+            //            Quick_Sort(arr, pivot + 1, right);
+            //    }
+            //}
+            //static int Partition(int[] arr, int left, int right)
+            //{
+            //    int pivot = arr[left];
+            //    while (true)
+            //    {
+            //        while (arr[left] < pivot)
+            //            left++;
+
+            //        while (arr[right] > pivot)
+            //            right--;
+
+            //        if (left < right)
+            //        {
+            //            if (arr[left] == arr[right]) return right;
+
+            //            int temp = arr[left];
+            //            arr[left] = arr[right];
+            //            arr[right] = temp;
+            //        }
+            //        else
+            //            return right;
+            //    }
+            //}
             #endregion
             #region Problem 22
-
+            ////Assume array is 1d
+            //int[] array = {5,2,7,7,5,5,2 };
+            //List<int> checkedNumbers = new();
+            //int i, j, count;
+            //for (i = 0; i < array.Length; i++)
+            //{
+            //    if (checkedNumbers.Contains(array[i]))
+            //        continue;
+            //    count = 1;
+            //    for (j = i + 1; j < array.Length; j++)
+            //    {
+            //        if (array[i] == array[j])
+            //        {
+            //            count++;
+            //        }
+            //    }
+            //    checkedNumbers.Add(array[i]);
+            //    Console.WriteLine($"Number {array[i]} appears {count} times");
+            //}
             #endregion
             #region Problem 23
 
