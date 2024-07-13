@@ -1,4 +1,6 @@
-﻿namespace Demo
+﻿using System.Text;
+
+namespace Demo
 {
     internal class Program
     {
@@ -48,16 +50,41 @@
             #region foreach
             foreach (int item in arr)
                 Console.Write($"{item}\t");
+            Console.WriteLine();
             #endregion
             #region while
-
+            int number = 3;
+            while (number % 2 != 0)
+            {
+                Console.WriteLine($"{number} is not an even number");
+                number++;
+            }
+            Console.WriteLine($"{number} is an even number");
             #endregion
             #region do while
-
+            bool flag;
+            int input;
+            do
+            {
+                Console.Write("Enter an even number: ");
+            } while (!int.TryParse(Console.ReadLine(), out input) || input % 2 != 0);
+            Console.WriteLine($"Well done....{input} is an even number");
             #endregion
             #endregion
             #region String vs string builder
+            string stringMessage = "message 1";
+            Console.WriteLine(stringMessage);
+            Console.WriteLine(stringMessage.GetHashCode());
+            stringMessage += "....I have modified my string";
+            Console.WriteLine(stringMessage);
+            Console.WriteLine(stringMessage.GetHashCode());
 
+            StringBuilder stringBuilder = new("Message 1 ");
+            Console.WriteLine(stringBuilder);
+            Console.WriteLine(stringBuilder.GetHashCode());
+            Console.WriteLine(stringBuilder);
+            stringBuilder.Append(".....I have modified my string");
+            Console.WriteLine(stringBuilder.GetHashCode());
             #endregion
         }
     }
